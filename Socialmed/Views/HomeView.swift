@@ -9,7 +9,17 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                StoryListView()
+                PostListView()
+            }
+            .navigationTitle("DevSocial")
+            .navigationBarItems(leading: Image(systemName: "pencil.and.outline"),
+                                trailing: Image(systemName: "bell.badge.fill")
+            )
+        }
+        
     }
 }
 

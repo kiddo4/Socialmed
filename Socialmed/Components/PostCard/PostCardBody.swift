@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct PostCardBody: View {
+    
+    let image: String
+    let like_count: Int
+    let comment_count: Int
+    let view_count: Int
+    let description: String
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             Image("post1")
@@ -19,29 +26,29 @@ struct PostCardBody: View {
             HStack {
                 HStack (spacing: 3) {
                     Image(systemName: "heart")
-                    Text("245")
+                    Text("\(like_count.formattedString())")
                 }
                 Spacer()
                 HStack {
                     Image(systemName: "text.bubble")
-                    Text("245")
+                    Text("\(comment_count.formattedString())")
                 }
                 Spacer()
                 HStack {
                     Image(systemName: "eye")
-                    Text("245")
+                    Text("\(view_count.formattedString())")
                 }
                 Spacer()
                 HStack {
                     Image(systemName: "bookmark")
-                    Text("245")
+                    
                 }
                 
                
             }
             .font(.callout)
             
-            Text("Building dev algorith for the future ai")
+            Text(description)
                 .lineLimit(2)
                 .multilineTextAlignment(.leading)
                 .font(.callout)
@@ -51,6 +58,3 @@ struct PostCardBody: View {
     }
 }
 
-#Preview {
-    PostCardBody()
-}
