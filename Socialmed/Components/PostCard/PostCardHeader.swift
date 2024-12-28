@@ -14,15 +14,15 @@ struct PostCardHeader: View {
     
     var body: some View {
         HStack {
-            Image("cat")
+            Image(profile_img)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 40, height: 40)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             
             VStack(alignment: .leading) {
-                Text("Smith Gbenro").bold()
-                Text("smith_dev")
+                Text(profile_name).bold()
+                Text(profile_id)
                     .font(.footnote)
                     .foregroundColor(.gray)
                 
@@ -33,6 +33,3 @@ struct PostCardHeader: View {
     }
 }
 
-#Preview {
-    PostCardHeader()
-}

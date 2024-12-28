@@ -6,8 +6,8 @@
     "view_count": 1200,
     "description": "Learn the basics of Python programming!",
     "profile_img": "cat2",
-    "profile_name": "Gabrial Micheal",
-    "profile_id": "gabrial_micheal"
+    "profile_name": "Smith Ajao",
+    "profile_id": "kiddo.df"
   },
   {
     "image": "post2",
@@ -96,7 +96,7 @@
     "view_count": 2400,
     "description": "Mastering algorithms and data structures in Java!",
     "profile_img": "cat",
-    "profile_name": "Gabrial Adam",
-    "profile_id": "gabrial_micheal"
+    "profile_name": "Smith Adam",
+    "profile_id": "smith_dev"
   }
 ]
